@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clovis Chamber Calendar</title>
 
   <!-- Load Montserrat from Google Fonts -->
@@ -25,6 +26,42 @@
     #mni-calendar-1755220758906 * {
       font-family: 'Montserrat', sans-serif !important;
       color: #000 !important;
+    }
+     #mni-calendar-1755220758906 .mn-widget-calendar-weekday,
+  #mni-calendar-1755220758906 .mn-widget-calendar-day {
+    display: grid !important;
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  #mni-calendar-1755220758906 .mn-widget-calendar {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 1rem;
+    }
+
+    #mni-calendar-1755220758906 .mn-widget-calendar {
+      font-size: 12px !important;
+    }
+
+    #mni-calendar-1755220758906 .mn-widget-calendar-header {
+      font-size: 16px !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #mni-calendar-1755220758906 .mn-widget-calendar {
+      font-size: 10px !important;
+    }
+  } 
     }
   </style>
 </head>
